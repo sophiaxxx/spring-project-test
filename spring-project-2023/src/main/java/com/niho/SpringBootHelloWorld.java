@@ -1,7 +1,9 @@
 package com.niho;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class SpringBootHelloWorld {
@@ -10,8 +12,18 @@ public class SpringBootHelloWorld {
 		// TODO Auto-generated method stub
 
 	}
-	@RequestMapping("/")
+	@RequestMapping("/hello")
 	public String hello(){
-		return "Hey, Spring Boot's Hello World ! ";
+		return "Hey, Spring Boot 的 Hello World !";
+	}
+	
+	@RequestMapping("/index")
+	public String login(){
+		return "index";
+	}
+	
+	@GetMapping("/index")
+	public String login2(){
+		return "index";
 	}
 }
