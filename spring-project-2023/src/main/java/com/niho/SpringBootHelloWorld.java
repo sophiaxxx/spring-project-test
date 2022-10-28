@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class SpringBootHelloWorld {
 
 	public static void main(String[] args) {
@@ -26,4 +26,5 @@ public class SpringBootHelloWorld {
 	public String login2(){
 		return "index";
 	}
+
 }
