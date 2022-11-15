@@ -8,10 +8,11 @@ import com.niho.repository.StaffRepository;
 
 @Service
 public class StaffService {
-	
+
 	@Autowired
 	StaffRepository staffRepository;
-	public void addStaff(StaffModel staffModel){
+
+	public void addStaff(StaffModel staffModel) {
 		staffRepository.addStaff(staffModel);
 	}
 

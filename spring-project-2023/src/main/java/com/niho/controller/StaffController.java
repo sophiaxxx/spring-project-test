@@ -9,22 +9,22 @@ import com.niho.service.StaffService;
 
 @RestController
 public class StaffController {
-	
-		@Autowired
-		StaffModel staffModel;
-		
-		@Autowired
-		StaffService staffService;
-	    @RequestMapping("/addStaff")
-	    public String hello(){
-	    	staffModel = new StaffModel();
-	    	staffModel.setPassword("1234");
-	    	staffModel.setEmail("email@email.com");
-	    	staffModel.setPhone("22334455");
-	    	staffModel.setPosition("Manager");
-	    	staffService.addStaff(staffModel);
-	        return "New Staff added";
-	    }
 
+	@Autowired
+	StaffModel staffModel;
+
+	@Autowired
+	StaffService staffService;
+
+	@RequestMapping("/addStaff")
+	public String hello() {
+		staffModel = new StaffModel();
+		staffModel.setPassword("1234");
+		staffModel.setEmail("email@email.com");
+		staffModel.setPhone("22334455");
+		staffModel.setPosition("Manager");
+		staffService.addStaff(staffModel);
+		return "New Staff added";
+	}
 
 }
