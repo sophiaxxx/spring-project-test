@@ -16,6 +16,7 @@ public class StaffController {
 	@Autowired
 	StaffService staffService;
 
+	//TODO: post a model data
 	@RequestMapping("/addStaff")
 	public String hello() {
 		staffModel = new StaffModel();
